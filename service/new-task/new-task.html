@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">   
+    <link rel="stylesheet" href="style/new-task.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Listasks - Nova Tarefa</title>
+</head>
+<body>
+    <div class="container-principal">
+        <header>
+            <div class="header-logo">
+                <img src="../../images/logo-nav.png" alt="Logo-Listasks">
+            </div><!--header-logo-->
+            <nav>
+                <ul>
+                    <li style="margin-top: 5px;">
+                        <a href="../home/home.html">
+                            <div class="icon-nav">
+                                <img src="../../images/inicio.png" alt="">
+                            </div><!--icon-nav-->
+                            
+                            <div class="titulo-nav">Início</div><!--titulo-nav-->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="icon-nav">
+                                <img src="../../images/estatisticas.png" alt="">
+                            </div><!--icon-nav-->
+                            
+                            <div class="titulo-nav">Estatísticas</div><!--titulo-nav-->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="icon-nav">
+                                <img src="../../images/calendario.png" alt="">
+                            </div><!--icon-nav-->
+                            
+                            <div class="titulo-nav">calendário</div><!--titulo-nav-->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../new-task/new-task.html">
+                            <div class="icon-nav">
+                                <img src="../../images/nova-tarefa-selecionado.png" alt="">
+                            </div><!--icon-nav-->
+                            
+                            <div class="titulo-nav">Nova Tarefa</div><!--titulo-nav-->
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="icon-nav">
+                                <img src="../../images/configuracoes.png" alt="">
+                            </div><!--icon-nav-->
+                            
+                            <div class="titulo-nav">Configurações</div><!--titulo-nav-->
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="cliente">
+                <div class="notificacoes">
+                    <a href="#">
+                        <img src="../../images/notificacoes.png" alt="Notificações">
+                    </a>
+                </div><!--notificacoes-->
+
+                <div class="ajuda">
+                    <a href="#">
+                        <img src="../../images/ajuda.png" alt="Ajuda">
+                    </a>
+                </div><!--ajuda-->
+
+                <div class="conta">
+                    <div class="conta-icon">
+                        <div class="inicial">
+                            P
+                        </div><!--inicial-->
+                    </div><!--conta-icon-->
+
+                    <div class="conta-nome">
+                        Pedro
+                    </div><!--conta-nome-->
+                </div><!--conta-->
+            </div><!--cliente-->
+
+            <div class="conteudo">
+                <div class="titulo">
+                    <h1>Nova Tarefa</h1>
+                </div><!--titulo-->
+
+                <form id="form-nova-tarefa">
+                    <div class="cadastro-tarefa-box" id="cadastro-tarefa-box">
+                        <div class="cadastro-tarefa-titulo">
+                            <h2>Detalhes da Tarefa</h2>
+                        </div><!--cadastro-tarefa-box-titulo-->
+
+                        <div class="cadastro-tarefa-nome">
+                            <input id="nome-tarefa" type="text" placeholder="Nome da Tarefa">
+                        </div><!--cadastro-tarefa-nome-->
+
+                        <div class="cadastro-tarefa-informacoes">
+                            <div class="informacoes-descricao-titulo">
+                                <h4>Descrição (opcional)</h4>
+                            </div><!--informacoes-descricao-->
+
+                            <div class="informacoes-tarefa-data">
+                                <h4>Data</h4>
+                                <input id="data-tarefa" type="date">
+                            </div><!--informacoes-tarefa-data-->
+
+                            <div class="informacoes-tarefa-hora">
+                                <h4>Hora</h4>
+                                <input id="hora-tarefa" type="time">
+                            </div><!--informacoes-tarefa-hora-->
+
+                            <div class="informacoes-tarefa-prioridade">
+                                <div class="slider-prioridade">
+                                    <label 
+                                    for="prioridade"
+                                    style="color: #646464; 
+                                        font-size: 15; 
+                                        font-weight: 500;">Prioridade:
+                                    </label>
+
+                                    <output 
+                                    for="prioridade" 
+                                    id="valor-prioridade" 
+                                    style="color: #646464; 
+                                        font-size: 15; 
+                                        font-weight: 500;">3
+                                    </output>
+                                </div><!--slider-prioridade-->
+
+                                <input 
+                                type="range"
+                                id="range-prioridade"
+                                name="prioridade"
+                                min="1"
+                                max="5"
+                                step="1"
+                                value="3"
+                                list="marcadores"
+                                
+                                oninput="atualizarSlider(this)">
+
+                                <div class="slider-labels">
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                </div><!--slider-labels-->
+                            </div><!--informacoes-tarefa-prioridade-->
+                        </div><!--cadastro-tarefa-informacoes-->
+
+                        <div class="informacoes-descricao">
+                            <textarea id="descricao-tarefa" name="" placeholder="Ex: Ligar para o cliente às 15h para confirmar os requisitos do projeto. Link para o doc: ..."></textarea>
+                        </div><!--informacoes-descricao-->
+
+                        <div class="cadastro-tarefa-tags">
+                            <h4>Tags</h4>
+                        </div><!--cadastro-tarefa-tags-->
+                    </div><!--cadastro-tarefa-box-->
+
+                    <div class="colaborador-tarefa-box">
+                        <div class="colaboradores-tarefa-titulo">
+                            <h2>Colaboradores e Lembretes</h2>
+                        </div><!--colaboradores-tarefa-titulo-->
+
+                        <div class="colaborador-input">
+                            <input type="text" placeholder="Adicionar Colaborador">
+                            <input type="submit" value="+">
+                        </div><!--colaborador-input-->
+
+                        <div class="lista-colaboradores">
+                            <div class="colaborador">
+                                <div class="colaborador-info">
+                                    <div class="colaborador-foto">
+                                        <img src="../../images/pedro-icon.jpg" alt="">
+                                    </div><!--colaborador-foto-->
+
+                                    <div class="colaborador-nome">
+                                        <span>Pedro Otavio</span>
+                                    </div><!--colaborador-nome-->
+                                </div><!--colaborador-info-->
+
+                                <div class="colaborador-lembrete">
+                                    <div class="lembrete-check">
+                                        <input type="checkbox">
+                                    </div><!--lembrete-check-->
+
+                                    <div class="lembrete-tempo">
+                                        <h4>Adicionar Lembrete</h4>
+                                        <div class="campo-lembrete">
+                                            <select id="lembrete-select" name="lembrete_minutos">
+                                                <option value="0">Na hora da tarefa</option>
+                                                <option value="5">5 minutos antes</option>
+                                                <option value="10">10 minutos antes</option>
+                                                <option value="15">15 minutos antes</option>
+                                                <option value="30" selected>30 minutos antes (padrão)</option>
+                                                <option value="60">1 hora antes</option>
+                                                <option value="120">2 horas antes</option>
+                                                <option value="1440">1 dia antes</option>
+                                            </select>
+                                        </div><!--campo-lembrete-->
+                                    </div><!--lembrete-tempo-->
+                                </div><!--colaborador-lembrete-->
+                            </div><!--colaborador-->
+                        </div><!--lista-colaboradores-->
+                    </div><!--colaborador-tarefa-box-->
+
+                    <div class="botoes-finais-tarefa">
+                        <button type="button" class="cancelar">Cancelar</button><!--cancelar-->
+                        <button type="submit" class="criar-tarefa">Criar Tarefa</button><!--criar-tarefa-->
+                    </div><!--botoes-finais-tarefa-->
+                </form><!--form-nova-tarefa-->
+            </div><!--conteudo-->
+        </main>
+    </div><!--container-principal-->
+
+    <!--
+        SCRIPTS
+    -->
+
+    <script src="js/new-task.js"></script><!--script-principal-->
+</body>
