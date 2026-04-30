@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Listasks - Início</title>
+</head>
+<body>
+    <div class="container-principal">
+        <header>
+            <div class="header-logo">
+                <img src="../../images/logo-nav.png" alt="Logo-Listasks">
+            </div><!--header-logo-->
+            <nav>
+                <ul>
+                    <li style="margin-top: 5px;">
+                        <a href="../home/home.html">
+                            <div class="icon-nav">
+                                <img src="../../images/inicio-selecionado.png" alt="">
+                            </div><!--icon-nav-->
+                            
+                            <div class="titulo-nav">Início</div><!--titulo-nav-->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="icon-nav">
+                                <img src="../../images/estatisticas.png" alt="">
+                            </div><!--icon-nav-->
+                            
+                            <div class="titulo-nav">Estatísticas</div><!--titulo-nav-->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="icon-nav">
+                                <img src="../../images/calendario.png" alt="">
+                            </div><!--icon-nav-->
+                            
+                            <div class="titulo-nav">calendário</div><!--titulo-nav-->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../new-task/new-task.html">
+                            <div class="icon-nav">
+                                <img src="../../images/nova-tarefa.png" alt="">
+                            </div><!--icon-nav-->
+                            
+                            <div class="titulo-nav">Nova Tarefa</div><!--titulo-nav-->
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="icon-nav">
+                                <img src="../../images/configuracoes.png" alt="">
+                            </div><!--icon-nav-->
+                            
+                            <div class="titulo-nav">Configurações</div><!--titulo-nav-->
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="cliente">
+                <div class="notificacoes">
+                    <a href="#">
+                        <img src="../../images/notificacoes.png" alt="Notificações">
+                    </a>
+                </div><!--notificacoes-->
+
+                <div class="ajuda">
+                    <a href="#">
+                        <img src="../../images/ajuda.png" alt="Ajuda">
+                    </a>
+                </div><!--ajuda-->
+
+                <div class="conta">
+                    <div class="conta-icon">
+                        <div class="inicial">
+                            P
+                        </div><!--inicial-->
+                    </div><!--conta-icon-->
+
+                    <div class="conta-nome">
+                        Pedro
+                    </div><!--conta-nome-->
+                </div><!--conta-->
+            </div><!--cliente-->
+
+            <div class="conteudo">
+                <div class="titulo">
+                    <h1>Início</h1>
+                </div><!--titulo-->
+
+                <div class="barra-de-dias">
+                    <div class="dias">
+                        <div class="dia">
+                            <span>Hoje</span>
+                        </div><!--hoje-->
+
+                        <div class="dia">
+                            <span>Amanhã</span>
+                        </div><!--amanha-->
+
+                        <div class="dia">
+                            <span>Depois</span>
+                        </div><!--ontem-->
+                    </div><!--dias-->
+
+                    <div class="barra-inteira">
+                        <div class="barra-selecionada">
+
+                        </div><!--barra-selecionada-->
+
+                        <div class="barra-restante">
+
+                        </div><!--barra-restante-->
+                    </div><!--barra-inteira-->
+                </div><!--barra-de-dias-->
+
+                <div class="informacoes-otimizadas">
+                    <div class="informacoes-otimizadas-box">
+                        <div class="titulo-tarefa">
+                            <span>Tarefas Totais</span>
+                            <div class="informacoes-otimizadas-icon">
+                                <img src="../../images/descricao.png" alt="">
+                            </div><!--informacoes-otimizadas-icon-->
+                        </div><!--titulo-tarefa-->
+
+                        <div class="numero-tarefa" id="stats-hoje">
+                            
+                        </div><!--numero-tarefa-->
+                    </div><!--informacoes-otimizadas-box-->
+
+                    <div class="informacoes-otimizadas-box">
+                        <div class="titulo-tarefa">
+                            <span>Tarefas Feitas</span>
+                            <div class="informacoes-otimizadas-icon">
+                                <img src="../../images/descricao.png" alt="">
+                            </div><!--informacoes-otimizadas-icon-->
+                        </div><!--titulo-tarefa-->
+
+                        <div class="numero-tarefa" id="stats-feitas">
+                            
+                        </div><!--numero-tarefa-->
+                    </div><!--informacoes-otimizadas-box-->
+
+                    <div class="informacoes-otimizadas-box">
+                        <div class="titulo-tarefa">
+                            <span>Tarefas a Fazer</span>
+                            <div class="informacoes-otimizadas-icon">
+                                <img src="../../images/descricao.png" alt="">
+                            </div><!--informacoes-otimizadas-icon-->
+                        </div><!--titulo-tarefa-->
+
+                        <div class="numero-tarefa" id="stats-a-fazer">
+                            
+                        </div><!--numero-tarefa-->
+                    </div><!--informacoes-otimizadas-box-->
+
+                    <div class="informacoes-otimizadas-box">
+                        <div class="titulo-tarefa">
+                            <span>Tarefas Atrasadas</span>
+                            <div class="informacoes-otimizadas-icon">
+                                <img src="../../images/descricao.png" alt="">
+                            </div><!--informacoes-otimizadas-icon-->
+                        </div><!--titulo-tarefa-->
+
+                        <div class="numero-tarefa" id="stats-atrasadas">
+                            
+                        </div><!--numero-tarefa-->
+                    </div><!--informacoes-otimizadas-box-->
+                </div><!--informacoes-otimizadas-->
+
+                <div class="tarefas-hoje">
+                    <div class="tarefas-hoje-titulo">
+                        <h1>Tarefas de hoje:</h1>
+                    </div><!--tarefas-hoje-titulo-->
+
+                    <div class="tarefas-hoje-wraper">
+                        <div class="tarefas-hoje-lista" id="container-tarefas-hoje">
+                            
+                        </div><!--tarefas-hoje-lista-->
+
+                        <div class="tarefas-hoje-focus">
+
+                        </div><!--tarefas-hoje-focus-->
+                    </div><!--tarefas-hoje-wraper-->
+                </div><!--tarefas-hoje-->       
+            </div><!--conteudo-->
+        </main>
+    </div><!--container-principal-->
+
+     <!--
+        SCRIPTS
+    -->
+
+    <script src="js/home.js"></script><!--script-principal-->
+</body>
+</html>

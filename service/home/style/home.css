@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container-principal{
+    display: flex;
+    height: 100vh;
+}
+
+
+/*
+    HEADER INICIO
+*/
+
+body header{
+    background-color: #12629d;
+    width: 280px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+body header .header-logo{
+    width: 75%;
+    height: 85px;
+    padding-left: 10px;
+}
+
+body header .header-logo img{
+    width: 100%;
+}
+
+body header nav{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 85px);
+    padding-left: 10px;
+}
+
+header nav ul:nth-of-type(1) li:nth-of-type(1){
+    background-color: rgba(144,202,95, 0.15);
+}
+
+header nav ul:nth-of-type(1) li:nth-of-type(1) .titulo-nav{
+    color: #90ca5f;
+}
+
+header nav ul:nth-of-type(1) li:hover{
+    transition: 0.4s;
+    background-color: rgba(144,202,95, 0.15);
+}
+
+header nav ul:nth-of-type(1) li{
+    transition: background-color 0.4s ease;
+}
+
+header nav ul li{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin-left: 5px;
+}
+header nav ul li a .icon-nav{
+    margin-top: -2px;
+}
+
+header nav ul li a .icon-nav img{
+    width: 17px;
+    vertical-align: middle;
+}
+
+header nav ul li a .titulo-nav{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+header nav ul:nth-of-type(2){
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+/*
+    HEADER FIM
+*/ 
+
+/*
+    MAIN INICIO
+*/ 
+
+main{
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #ecf0f1;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+/*
+    CLIENTE INICIO
+*/ 
+
+main .cliente{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.cliente .notificacoes{
+    width: 22px;
+    margin-right: 20px;
+}
+
+.cliente .notificacoes a img{
+    width: 100%;
+}
+
+.cliente .ajuda{
+    width: 22px;
+    margin-right: 20px;
+}
+
+.cliente .ajuda a img{
+    width: 100%;
+}
+
+.cliente .conta{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.cliente .conta .conta-icon{
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: rgba(144,202,95, 0.3);
+    margin-right: 6px;
+}
+
+.cliente .conta .conta-icon .inicial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #90ca5f;
+}
+
+.cliente .conta .conta-nome{
+    font-weight: bold;
+}
+
+/*
+    CLIENTE FIM
+*/ 
+
+/*
+    CONTEUDO INICIO
+*/ 
+
+main .conteudo{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+    max-width: 1280px;
+    
+}
+
+/*
+    BARRA DE DIAS INICIO
+*/ 
+
+.conteudo .barra-de-dias{
+    margin-top: 50px;
+}
+
+.conteudo .barra-de-dias .dias{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.conteudo .barra-de-dias .dias .dia{
+    margin-right: 60px;
+}
+
+.conteudo .barra-de-dias .dias .dia:nth-child(1){
+    color: #90ca5f;
+}
+
+.conteudo .barra-de-dias .dias .dia span{
+    font-size: 14px;
+}
+
+.conteudo .barra-inteira{
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo .barra-inteira .barra-selecionada{
+    width: 70px;
+    height: 4px;
+    background-color: #90ca5f;
+}
+
+.conteudo .barra-inteira .barra-restante{
+    width: 500px;
+    height: 4px;
+    background-color: #b7bfc2;
+}
+
+/*
+    BARRA DE DIAS FIM
+*/ 
+
+/*
+    INFORMAÇÕES OTIMIZADAS INICIO
+*/ 
+
+.conteudo .informacoes-otimizadas{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.conteudo .informacoes-otimizadas .informacoes-otimizadas-box{
+    width: 20%;
+    height: 70px;
+    background-color: white;
+    border: 2px solid #b7bfc2;
+    padding: 5px 15px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteudo .informacoes-otimizadas .informacoes-otimizadas-box:nth-child(1){
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.conteudo .informacoes-otimizadas .informacoes-otimizadas-box:nth-child(2){
+    border-left: none;
+}
+
+.conteudo .informacoes-otimizadas .informacoes-otimizadas-box:nth-child(3){
+    border-left: none;
+}
+
+.conteudo .informacoes-otimizadas .informacoes-otimizadas-box:nth-child(4){
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.conteudo .informacoes-otimizadas .informacoes-otimizadas-box .titulo-tarefa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conteudo .informacoes-otimizadas .informacoes-otimizadas-box .titulo-tarefa span{
+    color: #646464;
+    font-size: 15px;
+}
+
+.conteudo .informacoes-otimizadas .informacoes-otimizadas-box .titulo-tarefa .informacoes-otimizadas-icon{
+    width: 15px;
+    
+}
+
+.conteudo .informacoes-otimizadas .informacoes-otimizadas-box .titulo-tarefa .informacoes-otimizadas-icon img{
+    width: 100%;
+}
+
+.conteudo .informacoes-otimizadas .informacoes-otimizadas-box .numero-tarefa{
+    color: #646464;
+    margin-left: 5px;
+}
+
+/*
+    INFORMAÇÕES OTIMIZADAS FIM
+*/ 
+
+/*
+    TAREFAS HOJE INICIO
+*/ 
+
+.conteudo .tarefas-hoje{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.conteudo .tarefas-hoje .tarefas-hoje-titulo h1{
+    color: #646464;
+    font-weight: 370;
+}
+
+.tarefas-hoje-wraper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.conteudo .tarefas-hoje .tarefas-hoje-lista{
+    margin: 20px 0 0 5px;
+    width: 38%;
+}
+
+.conteudo .tarefas-hoje .tarefas-hoje-lista .tarefas-hoje-box{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    margin-right: 12%;
+}
+
+.conteudo .tarefas-hoje .tarefas-hoje-lista .tarefas-hoje-box .circulo-confirmar-tarefa-hoje{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #1d6fcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.conteudo .tarefas-hoje .tarefas-hoje-lista .tarefas-hoje-box .circulo-confirmar-tarefa-hoje .circulo-interior{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.conteudo .tarefas-hoje .tarefas-hoje-lista .tarefas-hoje-box .titulo-tarefa-hoje p{
+    color: #3a3737;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.conteudo .tarefas-hoje .tarefas-hoje-lista .tarefas-hoje-box .horario-tarefa-hoje .horario-tarefa-hoje-icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.conteudo .tarefas-hoje .tarefas-hoje-lista .tarefas-hoje-box .horario-tarefa-hoje{
+    margin-left: auto;
+}
+
+.conteudo .tarefas-hoje .tarefas-hoje-lista .tarefas-hoje-box .horario-tarefa-hoje .horario-tarefa-hoje-icon img{
+    width: 100%;
+}
+
+.conteudo .tarefas-hoje .tarefas-hoje-lista .tarefas-hoje-box .horario-tarefa-hoje .horario-tarefa-hoje-numero{
+    text-align: center;
+    color: #a6a6a6;
+}
+
+.tarefas-hoje-focus{
+    width: 30%;
+    background-color: #12629d;
+    margin: 40px 0 0 15px;
+    display: none;
+}
+
+/*
+    TAREFAS HOJE FIM
+*/ 
+
+/*
+    CONTEUDO FIM
+*/ 
+
+/*
+    MAIN FIM
+*/
